@@ -1,5 +1,14 @@
 const kmToGo = parseInt(prompt("How many km do you have to travel?"));
+if (isNaN(kmToGo)) {
+  alert("Choose a number fool!");
+  throw new Error("Choose a number!");
+}
+
 const passengerAge = parseInt(prompt("What is your age?"));
+if (isNaN(passengerAge)) {
+  alert("Choose a number fool!");
+  throw new Error("Choose a number!");
+}
 
 let ticketCost = 0.21 * kmToGo;
 let message = "";
