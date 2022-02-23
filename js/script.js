@@ -1,11 +1,7 @@
 const kmToGo = parseFloat(prompt("How many km do you have to travel?"));
-if (isNaN(kmToGo)) {
-  alert("Choose a number fool!");
-  throw new Error("Choose a number!");
-}
-
 const passengerAge = parseInt(prompt("What is your age?"));
-if (isNaN(passengerAge)) {
+
+if (isNaN(kmToGo) || isNaN(passengerAge)) {
   alert("Choose a number fool!");
   throw new Error("Choose a number!");
 }
