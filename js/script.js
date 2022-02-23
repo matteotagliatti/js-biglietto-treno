@@ -1,4 +1,4 @@
-const kmToGo = parseInt(prompt("How many km do you have to travel?"));
+const kmToGo = parseFloat(prompt("How many km do you have to travel?"));
 if (isNaN(kmToGo)) {
   alert("Choose a number fool!");
   throw new Error("Choose a number!");
