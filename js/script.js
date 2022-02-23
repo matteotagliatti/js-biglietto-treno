@@ -15,6 +15,7 @@ let message = "";
 
 if (passengerAge < 18) {
   ticketCost = ticketCost - ticketCost * 0.3; // 30% discount
+  /* ticketCost -= ticketCost * 0.3; */ // 30% discount alternative
   message = "30% discount applied because you are underage";
 } else if (passengerAge > 65) {
   ticketCost = ticketCost - ticketCost * 0.65; // 65% discount
